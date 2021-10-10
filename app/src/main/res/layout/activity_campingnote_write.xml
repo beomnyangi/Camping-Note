@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:background="@drawable/layout_border"
+		android:layout_width="match_parent"
+		android:layout_height="70dp">
+		<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:srcCompat="?attr/actionModeCloseDrawable"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:id="@+id/ib_back"
+			app:layout_constraintHorizontal_bias="0.05"/>
+
+		<Button
+			android:id="@+id/bt_ok"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="저장"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.9"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<Button
+			android:id="@+id/bt_addimage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="10dp"
+			android:text="사진 추가"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/bt_ok"
+			app:layout_constraintHorizontal_bias="1.0"
+			app:layout_constraintStart_toEndOf="@+id/ib_back"
+			app:layout_constraintTop_toTopOf="parent" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+	<ScrollView
+		android:background="@drawable/layout_border"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent">
+		<LinearLayout android:layout_width="match_parent"
+					  android:layout_height="wrap_content"
+					  android:orientation="vertical">
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_marginTop="10dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				
+				<EditText
+					android:layout_width="300dp"
+					android:layout_height="match_parent"
+					android:inputType="textMultiLine"
+					android:hint="캠핑장명 입력"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					android:id="@+id/et_name"
+					app:layout_constraintTop_toTopOf="parent"
+					app:layout_constraintBottom_toBottomOf="parent"/>
+			</androidx.constraintlayout.widget.ConstraintLayout>
+			
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_marginTop="10dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				
+				<ImageView
+					android:src="@drawable/ic_launcher_foreground"
+					android:scaleType="centerInside"
+					android:layout_width="300dp"
+					android:layout_height="180dp"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					android:id="@+id/iv_addimage"
+					app:layout_constraintTop_toTopOf="parent"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintVertical_bias="0.0"/>
+
+				<EditText
+					android:id="@+id/et_imageexplain"
+					android:layout_width="300dp"
+					android:layout_height="wrap_content"
+					android:hint="사진 설명"
+					android:inputType="textMultiLine"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/iv_addimage" />
+
+				<TextView
+					android:id="@+id/tv_imagetext"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="사진을 추가 하세요."
+					app:layout_constraintBottom_toBottomOf="@+id/iv_addimage"
+					app:layout_constraintEnd_toEndOf="@+id/iv_addimage"
+					app:layout_constraintStart_toStartOf="@+id/iv_addimage"
+					app:layout_constraintTop_toTopOf="@+id/iv_addimage"
+					app:layout_constraintVertical_bias="0.8" />
+			</androidx.constraintlayout.widget.ConstraintLayout>
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_marginTop="10dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				
+				<EditText
+					android:layout_width="300dp"
+					android:layout_height="wrap_content"
+					android:inputType="textMultiLine"
+					android:hint="후기를 작성 하세요"
+					android:id="@+id/et_review"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"/>
+			</androidx.constraintlayout.widget.ConstraintLayout>
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_marginTop="10dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				
+				<EditText
+					android:layout_width="300dp"
+					android:layout_height="wrap_content"
+					android:inputType="textMultiLine"
+					android:hint="주소 입력"
+					android:id="@+id/et_address"
+					app:layout_constraintTop_toTopOf="parent"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintVertical_bias="0.0"
+					app:layout_constraintEnd_toEndOf="parent"/>
+
+				<Button
+					android:id="@+id/bt_search"
+					android:layout_width="50dp"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="5dp"
+					android:layout_marginBottom="5dp"
+					android:text="검색"
+					app:layout_constraintBottom_toBottomOf="@+id/et_address"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintHorizontal_bias="1.0"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="@+id/et_address"
+					app:layout_constraintVertical_bias="1.0" />
+			</androidx.constraintlayout.widget.ConstraintLayout>
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_marginTop="10dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<EditText
+					android:id="@+id/et_number"
+					android:layout_width="300dp"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="10dp"
+					android:hint="캠핑장 연락처 입력"
+					android:inputType="phone"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					app:layout_constraintVertical_bias="0.0" />
+			</androidx.constraintlayout.widget.ConstraintLayout>
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_campgroundinformation.xml" value="0.32546296296296295" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_campingmap.xml" value="0.32546296296296295" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_campingnote.xml" value="0.15876242095754292" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_campingnote_detail.xml" value="0.15876242095754292" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_campingnote_item.xml" value="0.15876242095754292" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_campingnote_write.xml" value="0.32546296296296295" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_findpassword.xml" value="0.15876242095754292" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_findpasswordsuccess.xml" value="0.15876242095754292" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_loading.xml" value="0.20161290322580644" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_loginpage.xml" value="0.15876242095754292" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_searchaddress.xml" value="0.25" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_searchaddressitem.xml" value="0.22546296296296298" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_searchfilter.xml" value="0.22546296296296298" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_searchresults.xml" value="0.22546296296296298" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_signup.xml" value="0.15876242095754292" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_sitereservation.xml" value="0.32546296296296295" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_timeline_detail.xml" value="0.15876242095754292" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_timeline_item.xml" value="0.15876242095754292" />
+        <entry key="..\:/Users/beom/AndroidStudioProjects/Antaeul/app/src/main/res/layout/activity_viewmore.xml" value="0.32546296296296295" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="15" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

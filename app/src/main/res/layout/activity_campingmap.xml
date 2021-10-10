@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:background="@drawable/layout_border">
+
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="내 캠핑지도"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<ImageButton
+			android:id="@+id/ib_loc_off"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginStart="10dp"
+			android:scaleType="fitCenter"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:srcCompat="@drawable/current_location_off" />
+
+		<ImageButton
+			android:id="@+id/ib_loc_on"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginStart="10dp"
+			android:scaleType="fitCenter"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:srcCompat="@drawable/current_location_on" />
+
+		<ImageButton
+			android:id="@+id/ib_compass_on"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginStart="10dp"
+			android:scaleType="fitCenter"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:srcCompat="@drawable/compass_on" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<RelativeLayout
+		android:id="@+id/map_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1" />
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="65dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent">
+
+		<LinearLayout
+			android:id="@+id/linearLayout2"
+			android:layout_width="match_parent"
+			android:layout_height="65dp"
+			android:orientation="horizontal"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintVertical_bias="1.0">
+
+			<Button
+				android:id="@+id/bt_timeline"
+				android:layout_width="65dp"
+				android:layout_height="65dp"
+				android:layout_gravity="center"
+				android:layout_weight="1"
+				android:text="타임라인" />
+
+			<Button
+				android:id="@+id/bt_searchbymap"
+				android:layout_width="65dp"
+				android:layout_height="65dp"
+				android:layout_gravity="center"
+				android:layout_weight="1"
+				android:text="내 캠핑\n지도" />
+
+			<ImageButton
+				android:id="@+id/ib_writenote"
+				android:layout_width="65dp"
+				android:layout_height="65dp"
+				android:layout_gravity="center"
+				android:layout_weight="1"
+				app:srcCompat="@android:drawable/ic_menu_add" />
+
+			<Button
+				android:id="@+id/bt_mycampingnote"
+				android:layout_width="65dp"
+				android:layout_height="65dp"
+				android:layout_gravity="center"
+				android:layout_weight="1"
+				android:text="내 캠핑\n노트" />
+
+			<Button
+				android:id="@+id/bt_viewmore"
+				android:layout_width="65dp"
+				android:layout_height="65dp"
+				android:layout_gravity="center"
+				android:layout_weight="1"
+				android:text="더보기" />
+		</LinearLayout>
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
