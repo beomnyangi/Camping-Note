@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "602188127568",
+    "firebase_url": "https://campingnote-fe0e9.firebaseio.com",
+    "project_id": "campingnote-fe0e9",
+    "storage_bucket": "campingnote-fe0e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602188127568:android:99a8885c92dba2e5aa2055",
+        "android_client_info": {
+          "package_name": "com.nova.antaeul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602188127568-rt7gr2eq5dka3mpkcg5qm2655ir1p9pf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtEAYugq_qy9DTn9g443giUHrojkAcNNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602188127568-rt7gr2eq5dka3mpkcg5qm2655ir1p9pf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

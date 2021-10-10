@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:background="@drawable/layout_border"
+		android:layout_width="match_parent"
+		android:layout_height="70dp">
+		<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:srcCompat="?attr/actionModeCloseDrawable"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:id="@+id/ib_back"
+			app:layout_constraintHorizontal_bias="0.05"/>
+		<Button
+			android:text="수정"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintBottom_toBottomOf="parent"
+			android:id="@+id/bt_modify"
+			app:layout_constraintHorizontal_bias="0.9"
+			app:layout_constraintEnd_toStartOf="@+id/bt_delete"
+			app:layout_constraintStart_toStartOf="parent"/>
+		<Button
+			android:text="삭제"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:id="@+id/bt_delete"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintHorizontal_bias="0.9"/>
+	
+	</androidx.constraintlayout.widget.ConstraintLayout>
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/layout_border"
+			android:orientation="vertical">
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_marginTop="10dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<TextView
+					android:id="@+id/tv_name"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_marginTop="10dp"
+					android:background="@drawable/text_border"
+					android:ems="18"
+					android:text="캠핑장명 입력"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintHorizontal_bias="0.0"
+					app:layout_constraintStart_toStartOf="@+id/name"
+					app:layout_constraintTop_toBottomOf="@+id/name"
+					app:layout_constraintVertical_bias="0.0" />
+
+				<TextView
+					android:id="@+id/name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="45dp"
+					android:text="캠핑장 이름"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintHorizontal_bias="0.0"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					app:layout_constraintVertical_bias="0.0" />
+			</androidx.constraintlayout.widget.ConstraintLayout>
+			
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_marginTop="10dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ImageView
+					android:layout_width="300dp"
+					android:layout_height="180dp"
+					android:scaleType="centerInside"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					android:background="@drawable/text_border"
+					android:src="@drawable/ic_launcher_foreground"
+					android:id="@+id/iv_image"
+					app:layout_constraintTop_toTopOf="parent"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintVertical_bias="0.0"/>
+
+				<TextView
+					android:id="@+id/tv_imageexplain"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:background="@drawable/text_border"
+					android:ems="18"
+					android:text="사진 설명"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="@+id/iv_image"
+					app:layout_constraintHorizontal_bias="0.0"
+					app:layout_constraintStart_toStartOf="@+id/imageexplain"
+					app:layout_constraintTop_toBottomOf="@+id/imageexplain"
+					app:layout_constraintVertical_bias="0.0" />
+
+				<TextView
+					android:id="@+id/imageexplain"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="45dp"
+					android:layout_marginTop="10dp"
+					android:text="사진 설명"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintHorizontal_bias="0.0"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/iv_image"
+					app:layout_constraintVertical_bias="0.0" />
+			</androidx.constraintlayout.widget.ConstraintLayout>
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="10dp">
+
+				<TextView
+					android:id="@+id/tv_review"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:background="@drawable/text_border"
+					android:ems="18"
+					android:text="후기를 작성 하세요"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintHorizontal_bias="0.0"
+					app:layout_constraintStart_toStartOf="@+id/review"
+					app:layout_constraintTop_toBottomOf="@+id/review"
+					app:layout_constraintVertical_bias="0.0" />
+
+				<TextView
+					android:id="@+id/review"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="45dp"
+					android:text="후기"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintHorizontal_bias="0.0"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					app:layout_constraintVertical_bias="0.0" />
+
+			</androidx.constraintlayout.widget.ConstraintLayout>
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_marginTop="10dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<TextView
+					android:id="@+id/tv_address"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:background="@drawable/text_border"
+					android:ems="18"
+					android:text="주소 작성"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintHorizontal_bias="0.0"
+					app:layout_constraintStart_toStartOf="@+id/address"
+					app:layout_constraintTop_toBottomOf="@+id/address"
+					app:layout_constraintVertical_bias="0.0" />
+
+				<TextView
+					android:id="@+id/address"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="45dp"
+					android:text="주소"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintHorizontal_bias="0.0"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					app:layout_constraintVertical_bias="0.0" />
+			</androidx.constraintlayout.widget.ConstraintLayout>
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="10dp">
+
+				<TextView
+					android:id="@+id/tv_number"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:background="@drawable/text_border"
+					android:ems="18"
+					android:text="연락처 입력"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintHorizontal_bias="0.0"
+					app:layout_constraintStart_toStartOf="@+id/number"
+					app:layout_constraintTop_toBottomOf="@+id/number"
+					app:layout_constraintVertical_bias="0.0" />
+
+				<TextView
+					android:id="@+id/number"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="45dp"
+					android:text="연락처"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintHorizontal_bias="0.0"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					app:layout_constraintVertical_bias="0.0" />
+			</androidx.constraintlayout.widget.ConstraintLayout>
+
+			<TextView
+				android:id="@+id/textView10"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

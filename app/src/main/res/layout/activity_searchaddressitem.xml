@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/layout_border"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/tv_address_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="지번"
+		app:layout_constraintBottom_toBottomOf="@+id/textView6"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toEndOf="@+id/textView6"
+		app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+	<TextView
+		android:id="@+id/tv_road_address_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="도로명"
+		app:layout_constraintBottom_toBottomOf="@+id/textView19"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toEndOf="@+id/textView19"
+		app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+	<TextView
+		android:id="@+id/textView6"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="60dp"
+		android:text="지번 주소 : "
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="@+id/tv_placename"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.0" />
+
+	<TextView
+		android:id="@+id/textView19"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="도로명 주소 : "
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="@+id/textView6"
+		app:layout_constraintTop_toBottomOf="@+id/textView6"
+		app:layout_constraintVertical_bias="0.0" />
+
+	<TextView
+		android:id="@+id/textView27"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView19"
+		app:layout_constraintVertical_bias="0.0" />
+
+	<TextView
+		android:id="@+id/tv_placename"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="20dp"
+		android:layout_marginTop="20dp"
+		android:text="place_name"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

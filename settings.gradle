@@ -1,0 +1,6 @@
+include ':ADSClient-1.1'
+include ':mail'
+include ':additionnal'
+include ':activation'
+include ':app'
+rootProject.name = "Antaeul"
